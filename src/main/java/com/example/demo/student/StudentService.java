@@ -30,4 +30,14 @@ public class StudentService {
 		//System.out.println(student);
 	}
 
+	public void deleteStudent(Long id) {
+		// TODO Auto-generated method stub
+		if (!studentRepository.existsById(id))
+		{
+			throw new IllegalStateException("student with id " + id + " does not exists");
+		}
+		studentRepository.deleteById(id);
+	}
+	
+
 }
