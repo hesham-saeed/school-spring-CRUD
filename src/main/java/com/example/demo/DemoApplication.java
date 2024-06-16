@@ -16,9 +16,9 @@ public class DemoApplication {
 	}
 	
 	@GetMapping() //serve as a RESTful endpoint
-	public String hello() {
-		//return List.of("Hello", "World");
-		return "Hello World";
+	public List<String> hello() {
+		return List.of("Hello", "World");
+		//return "Hello World";
 	}
 
 }
