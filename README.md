@@ -1,1 +1,1 @@
-CRUD App of School Application with Spring Boot
+School CRUD-Application with Spring Boot
